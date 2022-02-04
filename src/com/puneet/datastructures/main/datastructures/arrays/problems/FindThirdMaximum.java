@@ -1,4 +1,4 @@
-package com.puneet.datastructures.main.arrays.problems;
+package com.puneet.datastructures.main.datastructures.arrays.problems;
 
 public class FindThirdMaximum {
 

@@ -1,4 +1,4 @@
-package com.puneet.datastructures.main.arrays;
+package com.puneet.datastructures.main.datastructures.arrays;
 
 public interface DynamicArraysContract {
     String get(int index);

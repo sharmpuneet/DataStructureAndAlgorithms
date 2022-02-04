@@ -4,6 +4,7 @@ This is a repository including concepts, source codes and exercises related to D
 
 ## Concepts
 * Arrays
+* Stacks
 
 ### Arrays
 Arrays represent collection of homogeneous data type. Below are the three main features:
@@ -27,3 +28,15 @@ Insert is a linear operation O(n)
 - decrement the size counter
 
 In deletion, we simply overwrite so we have one less step. Deletions is a linear operation O(n)
+
+### Stacks
+Stacks follow LIFO (Last In First Out) behaviour.
+- When an item is put on the top, it is called push.
+- When an item is removed from the top, it is called pop.
+- Elements are not removed from the array but pointers (top) are changed for push and pop and values are overridden.
+
+### Queue
+Stacks follow FIFO (First In First Out) behaviour.
+- When an item is put on the top, it is called push.
+- When an item is removed from the top, it is called pop.
+- Elements are not removed from the array but pointers (top) are changed for push and pop and values are overridden.
