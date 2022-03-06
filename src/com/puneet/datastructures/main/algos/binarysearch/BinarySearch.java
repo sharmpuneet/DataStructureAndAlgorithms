@@ -3,22 +3,26 @@ package com.puneet.datastructures.main.algos.binarysearch;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int[] a = {1, 4, 5, 6, 8, 12, 22, 34, 44, 243, 4422};
-        System.out.println(binarySearchResult(a, 44223));
+        int[] a = {-19, -12, 0, 1, 4, 5, 6, 8, 12, 22, 34, 44, 243, 4422};
+        System.out.println(binarySearchResult(a, 44));
     }
 
+    // Return the index
+    // Return -1 if it does not exist
     public static int binarySearchResult(int[] inputArray, int target) {
-        int p = 0;
-        int r = inputArray.length - 1;
-        int q;
-        while (p <= r) {
-            q = (p + r) / 2;
-            if (inputArray[q] > target) {
-                r = q - 1;
-            } else if (inputArray[q] < target) {
-                p = q + 1;
+        int start = 0;
+        int end = inputArray.length - 1;
+        int middle;
+        while (start <= end) {
+            // Find middle element
+         //   middle = (start + end) / 2; - this formula may exceed int range if input is very large
+            middle = start + (end-start)/2;
+            if (target < inputArray[middle]) {
+                end = middle - 1;
+            } else if (target > inputArray[middle]) {
+                start = middle + 1;
             } else {
-                return q;
+                return middle;
             }
         }
         return -1;
