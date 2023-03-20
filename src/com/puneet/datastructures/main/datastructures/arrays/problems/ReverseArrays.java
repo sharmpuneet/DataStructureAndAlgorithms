@@ -17,11 +17,11 @@ public class ReverseArrays {
 
     static void reverseArray(int[] array) {
         int start = 0;
-        int end = array.length-1;
-        while (start<end) {
-             swap(array, start, end);
-             start++;
-             end--;
+        int end = array.length - 1;
+        while (start < end) {
+            swap(array, start, end);
+            start++;
+            end--;
         }
     }
 

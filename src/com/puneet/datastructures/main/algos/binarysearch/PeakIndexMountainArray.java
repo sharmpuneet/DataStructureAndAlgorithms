@@ -4,10 +4,7 @@ public class PeakIndexMountainArray {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 4, 6, 8, 10, 14, 16, 18, 21, 19, 17, 12, 9, 5, 1};
-
         System.out.println(getPeakIndexFromMountainArray(arr));
-
-
     }
 
     private static int getPeakIndexFromMountainArray(int[] arr) {

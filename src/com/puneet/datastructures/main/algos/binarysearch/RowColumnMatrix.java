@@ -18,7 +18,7 @@ public class RowColumnMatrix {
                 {13, 14, 15, 16}
         };
         int target = 50;
-        System.out.println(Arrays.toString(search(arr, target)));
+        System.out.println(Arrays.toString(search(arr1, target)));
 
     }
 

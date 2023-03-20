@@ -3,7 +3,7 @@ package com.puneet.datastructures.main.algos.binarysearch;
 public class FindInMountainArray {
 
     // 1. Find the peak element
-    // 2. Binary Search in [0,peal element]
+    // 2. Binary Search in [0,peak element]
     // 3. If not Found binary search in [peak element, end]
 
     public static void main(String[] args) {

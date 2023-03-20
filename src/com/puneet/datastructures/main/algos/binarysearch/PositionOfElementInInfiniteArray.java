@@ -13,7 +13,7 @@ public class PositionOfElementInInfiniteArray {
 
         while (target > arr[end]) {
             int temp = end + 1; // new start
-            // double the box and caluclate the box range
+            // double the box and calculate the box range
             end = end + (end - (start - 1)) * 2;
             start = temp;
         }
